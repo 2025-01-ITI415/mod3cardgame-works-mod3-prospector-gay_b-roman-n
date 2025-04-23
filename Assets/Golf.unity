@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 519420033}
   - component: {fileID: 519420035}
   - component: {fileID: 519420034}
-  - component: {fileID: 519420036}
+  - component: {fileID: 519420037}
   m_Layer: 0
   m_Name: _MainCamera
   m_TagString: MainCamera
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63a54131c494846e18f26b7181dd2d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jsonLayoutFile: {fileID: 4900000, guid: 0579412819a174464adf828afde18c5f, type: 3}
+  jsonLayoutFile: {fileID: 4900000, guid: b7a26d7aa89654bf98738f57ecd77f70, type: 3}
   layout:
     multiplier: {x: 0, y: 0}
     slots: []
@@ -278,7 +278,7 @@ MonoBehaviour:
       y: 0
       layer: 
       xStagger: 0
---- !u!114 &519420036
+--- !u!114 &519420037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,12 +287,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a58377410ab344f308b739cd13d865a9, type: 3}
+  m_Script: {fileID: 11500000, guid: da6b23b17b34f452b9e9bb89b81e3100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   drawPile: []
   discardPile: []
-  mine: []
+  tableau: []
   target: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
