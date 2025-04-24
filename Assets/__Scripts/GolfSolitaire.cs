@@ -254,7 +254,16 @@ public class GolfSolitaire : MonoBehaviour
     bool CanPlayOnTarget(CardGolf cg)
     {
         if (target == null) return false;
-        return Mathf.Abs(cg.rank - target.rank) == 1;
+
+        // Standard check for ranks one apart
+        if (Mathf.Abs(cg.rank - target.rank) == 1)
+            return true;
+
+        // Special case for King (13) and Ace (1)
+        if ((cg.rank == 1 && target.rank == 13) || (cg.rank == 13 && target.rank == 1))
+            return true;
+
+        return false;
     }
 
     static public void CARD_CLICKED(CardGolf cg)
